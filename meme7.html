@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <title>FindYourMeme</title>
+    <link rel="stylesheet" href="/stylememes.css">
+    <link rel="shortcut icon" href="/img/laugh_pixel_emoticon_emoji_icon_189282.png" type="image/x-icon">
+    <script src="/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" media="screen,projection" href="/ui.totop.css" />
+</head>
+<body>
+    <header>
+        <div class="header">
+        <h1>FindYourMeme</h1>
+        </div>
+    </header>
+    <main>
+        <p class="name">Генератор мемов</p>
+        <form method="post">
+            <div class="button"><input class="buttons" type="button" name="B1" value="Сгенерировать" onclick="randomlink()"></div>
+        </form>
+        <script>
+            var randomlinks = [];
+randomlinks[0]="/Memes/meme1.html";
+randomlinks[1]="/Memes/meme2.html";
+randomlinks[2]="/Memes/meme3.html";
+randomlinks[3]="/Memes/meme4.html";
+randomlinks[4]="/Memes/meme5.html";
+randomlinks[5]="/Memes/meme6.html";
+randomlinks[6]="/Memes/meme8.html";
+randomlinks[7]="/Memes/meme9.html";
+randomlinks[8]="/Memes/meme10.html";
+
+function randomlink(){
+    window.open(randomlinks[Math.floor(Math.random()*randomlinks.length)], '_top');
+}
+        </script>
+        <div class="meme">
+        <p class="memename">Успешный ребенок</p>
+        <img src="/img/memy_021.jpg" alt="Успешный ребенок">
+        <p class="text">На фотоснимке маленький мальчик держит сжатым кулачок, показывая, что он преодолел некую сложнейшую ситуацию.
+            <br>В оригинале фото мальчик в руке сжимает песок и собирается его съесть. Фотографию сделали и выложили на 
+            Flickr в 2007 году.</p>
+        <img src="/img/memy_022.jpg" alt="Успешный ребенок">
+        <p class="text">Позднее, копаясь в этой истории, пользователи Сети узнали, что мальчика зовут Сэмми, и на момент съемки ему было 11 месяцев. 
+            Причем пришедшая к Сэмми Гринеру популярность помогла его семье собрать деньги на операцию для отца.</p>
+        <img src="/img/memy_023.jpg" alt="Успешный ребенок">
+        <p clas="text">С изображением успешного мальчика в США даже выпустили фигурки. Он стал настоящей знаменитостью.</p>
+        <img src="/img/memy_024.jpg" alt="Успешный ребенок">
+    </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>FindYourMeme©, 2022</p>
+            <p>Сайт для ценителей </p>
+        </div>
+    </footer>
+    <script src="/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="/js/easing.js" type="text/javascript"></script>
+<script src="/js/jquery.ui.totop.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+/*
+var defaults = {
+containerID: 'toTop', // fading element id
+containerHoverID: 'toTopHover', // fading element hover id
+scrollSpeed: 1200,
+easingType: 'linear'
+};
+*/
+ 
+$().UItoTop({ easingType: 'easeOutQuart' });
+ 
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <title>FindYourMeme</title>
+    <link rel="stylesheet" href="/stylememes.css">
+    <link rel="shortcut icon" href="/img/laugh_pixel_emoticon_emoji_icon_189282.png" type="image/x-icon">
+    <script src="/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" media="screen,projection" href="/ui.totop.css" />
+</head>
+<body>
+    <header>
+        <div class="header">
+        <h1>FindYourMeme</h1>
+        </div>
+    </header>
+    <main>
+        <p class="name">Генератор мемов</p>
+        <form method="post">
+            <div class="button"><input class="buttons" type="button" name="B1" value="Сгенерировать" onclick="randomlink()"></div>
+        </form>
+        <script>
+            var randomlinks = [];
+randomlinks[0]="/Memes/meme1.html";
+randomlinks[1]="/Memes/meme3.html";
+randomlinks[2]="/Memes/meme4.html";
+randomlinks[3]="/Memes/meme5.html";
+randomlinks[4]="/Memes/meme6.html";
+randomlinks[5]="/Memes/meme7.html";
+randomlinks[6]="/Memes/meme8.html";
+randomlinks[7]="/Memes/meme9.html";
+randomlinks[8]="/Memes/meme10.html";
+
+function randomlink(){
+    window.open(randomlinks[Math.floor(Math.random()*randomlinks.length)], '_top');
+}
+        </script>
+        <div class="meme">
+        <p class="memename">Грустный Киану Ривз</p>
+        <img src="/img/memy_003.jpg" alt="Грустный Киану Ривз">
+        <p class="text">Удачный снимок сделали папарацци в начале лета 2010 года. Актер сидел в парке с пирожком в руке.<br>
+            Он выглядел грустным, но именно из-за этого фото стало одним из самых известных мемов в интернете.<br>
+            Фотожабы (разновидность монтажа) с Киану появлялись во всех соцсетях по совершенно разным поводам, 
+            а зачастую создатели компилировали сразу несколько персонажей, и снимки получались все равно органичными.</p>
+        <img src="/img/memy_004.jpg" alt="Грустный Киану Ривз">
+        <img src="/img/memy_005.jpg" alt="Грустный Киану Ривз">
+    </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>FindYourMeme©, 2022</p>
+            <p>Сайт для ценителей </p>
+        </div>
+    </footer>
+    <script src="/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="/js/easing.js" type="text/javascript"></script>
+<script src="/js/jquery.ui.totop.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+/*
+var defaults = {
+containerID: 'toTop', // fading element id
+containerHoverID: 'toTopHover', // fading element hover id
+scrollSpeed: 1200,
+easingType: 'linear'
+};
+*/
+ 
+$().UItoTop({ easingType: 'easeOutQuart' });
+ 
+});
+</script>
+</body>
+</html>
